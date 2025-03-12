@@ -12,7 +12,7 @@ const routes = {
 function updateActiveLink(url) {
   document.querySelectorAll("[data-link]").forEach(link => {
     link.classList.remove("active");
-    if (link.getAttribute("href") === `${url}`) {
+    if (link.getAttribute("href") === `#${url}`) {
       link.classList.add("active");
     }
     document.querySelector('.header').classList.remove('nav-open');
@@ -38,7 +38,6 @@ async function loadContent(url) {
       intializeCareer()
     }
   } catch (error) {
-    console.error(error);
     app.innerHTML = `<h1>Page not found</h1>`;
   }
 }
@@ -58,6 +57,7 @@ document.addEventListener("click", (e) => {
 // Handle hash changes
 window.addEventListener("hashchange", () => {
   const url = window.location.hash.slice(1) || "/";
+
   loadContent(url);
   updateActiveLink(url);
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -66,8 +66,6 @@ window.addEventListener("hashchange", () => {
 // Initial page load
 document.addEventListener("DOMContentLoaded", () => {
   const url = window.location.hash.slice(1) || "/";
-  console.log(url);
-
   loadContent(url);
   updateActiveLink(url);
 })
@@ -161,16 +159,6 @@ function openTab(event, tabId) {
   document.getElementById(tabId).classList.add('active');
   event.currentTarget.classList.add('active');
 }
-
-//live chat 
-document.getElementById('btn-live-chat').addEventListener("click", function () {
-  console.log("live chat clicked");
-
-  let chackbox = document.getElementById("fb-customer-chat");
-  console.log(chackbox);
-
-  chackbox.classList.toggle("fb_iframe_widget_visible")
-})
 
 //scroll to element
 

@@ -52,12 +52,8 @@
     transition: all 0.3s ease;
 }
 
-/* .main-nav-link:hover,
-.main-nav-link:active {
-    color: #007bff;
-} */
-
-.main-nav-link:focus {
+.main-nav-link:hover,
+.main-nav-link.active {
     outline: none;
     border-bottom: 3px solid #c2002f;
   }
