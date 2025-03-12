@@ -14,8 +14,8 @@ function updateActiveLink(url) {
     link.classList.remove("active");
     if (link.getAttribute("href") === `${url}`) {
       link.classList.add("active");
-      document.querySelector('.header').classList.remove('nav-open');
     }
+    document.querySelector('.header').classList.remove('nav-open');
   });
 }
 
@@ -44,8 +44,6 @@ async function loadContent(url) {
 }
 
 function navigateTo(url) {
-  console.log(url, window.location.hash);
-  
   window.location.hash = url;
 }
 
@@ -60,8 +58,6 @@ document.addEventListener("click", (e) => {
 // Handle hash changes
 window.addEventListener("hashchange", () => {
   const url = window.location.hash.slice(1) || "/";
-  console.log(url);
-  
   loadContent(url);
   updateActiveLink(url);
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -71,7 +67,7 @@ window.addEventListener("hashchange", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const url = window.location.hash.slice(1) || "/";
   console.log(url);
-  
+
   loadContent(url);
   updateActiveLink(url);
 })
