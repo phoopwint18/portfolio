@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    /* scroll-behavior: smooth; */
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Raleway", serif;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+ul {
+    margin-bottom: 0;
+    padding-left: 1rem;
+}
+
+/*************************/
+/* General Component */
+/*************************/
+
+.element-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-padding{
+    padding-top: 40px;
+}
+
+.primary-color{
+    color: #c2002f;
+}
+
+.main-title{
+    font-weight: bolder;
+    font-size: calc(1.325rem + .9vw);
+}
+
+.sub-title{
+    font-weight: 600;
+    font-size: calc(1.3rem + .6vw) !important;
+}
+
+/* bg color */
+
+.primary-bg{
+    background-color: #c2002f;
+}
+.light-blue-bg{
+    background-color: #EEF4FA;;
+}
+
+.lighter-blue-bg{
+    background-color: #F6FAFD;;
+}
+
+/* btn */
+.custom-btn{
+    border: 0;
+    border-radius: 6px;
+    padding-block: 6px;
+    padding-inline: 20px;
+    font-size: 15px;
+    font-family: "Raleway", serif;
+    cursor: pointer;
+}
+
+.primary-btn {
+    color: #fff;
+    background-color: #c2002f;
+}
+
+.secondary-btn {
+    box-shadow: inset 0 0 0 2px #fff;
+    background-color: transparent;
+}
+
+.btn-link{
+    border: 0;
+    border-radius: 6px;
+    padding-block: 6px;
+    background-color: transparent;
+    text-decoration: none;
+    padding-inline: 20px;
+    font-size: 15px;
+    font-family: "Raleway", serif;
+    cursor: pointer;
+}
+.btn-link:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.btn-tag{
+    background: transparent;
+    border-radius: 50px;
+    padding-block: 4px;
+    padding-inline: 8px;
+    font-size: 12px;
+}
+
+#myInput::placeholder {
+    font-family: "Raleway", serif;
+    color: #898989;
+}
+
+#myInput {
+    border: none;
+    outline: none;
+    padding-inline: 10px;
+}
+
+.custom-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+.section-padding {
+    padding-block: 60px;
+}
+
+.col-divider {
+    width: 1px;
+    height: 90px;
+    background: #D8D8D8;
+    display: block;
+}
+
+.row-divider{
+    width: 100%;
+    height: 1px;
+    background: #D8D8D8;
+    display: none;
+}
+
+.custom-div-width{
+    width: 70%;
+}

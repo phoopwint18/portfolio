@@ -1,0 +1,367 @@
+@media (max-width: 575px){
+
+    /* Mobile phones */
+    .footer-container {
+        display: none;
+    }
+
+    .footer-divider {
+        display: none;
+    }
+
+    /* contact us */
+
+    .col-divider {
+        display: none;
+    }
+
+    .row-divider {
+        display: block;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /* Tablets */
+    .navbar-links {
+        gap: 20px;
+    }
+
+    .footer-container {
+        display: none;
+    }
+
+    .footer-divider {
+        display: none;
+    }
+
+    .last-mile-bg {
+        background-color: transparent;
+    }
+
+    /* contact us */
+
+    .col-divider {
+        display: none;
+    }
+
+    .row-divider {
+        display: block;
+    }
+}
+
+/* @media (min-width: 769px) and (max-width: 999px) { */
+    /* about us */
+    /* .about-img-one {
+        width: 100%;
+    }
+
+    .about-img-two {
+        width: 100%;
+    }
+
+    .about-img-three {
+        width: 100%;
+    } */
+/* } */
+
+/* @media (min-width: 769px) and (max-width: 999px) {} */
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Small laptops */
+    /* contact us */
+
+    .col-divider {
+        display: block;
+    }
+
+    .row-divider {
+        display: none;
+    }
+
+    /* about us */
+    .about-img-one {
+        width: 400px;
+    }
+
+    .about-img-two {
+        width: 350px;
+    }
+
+    .about-img-three {
+        width: 350px;
+    }
+
+}
+
+@media (min-width: 1120px) and (max-width: 1280px) {
+
+    /* Large devices */
+    .header {
+        padding: 0 1rem;
+    }
+
+    .main-nav {
+        gap: 1.2rem;
+    }
+
+    .main-nav-list {
+        gap: 1.1rem;
+    }
+
+    .flag-container {
+        margin-left: 5px;
+    }
+
+    /* contact us */
+
+    .col-divider {
+        display: block;
+    }
+
+    .row-divider {
+        display: none;
+    }
+
+    .custom-gap {
+        gap: 3rem;
+    }
+
+    /* about us */
+    .about-img-one {
+        width: 400px;
+    }
+
+    .about-img-two {
+        width: 350px;
+    }
+
+    .about-img-three {
+        width: 350px;
+    }
+}
+
+/* max queries */
+/* for max-xs */
+@media (max-width: 575px){
+
+}
+
+/* for max-sm */
+@media (max-width: 767px) {
+    /* step */
+    .step::before {
+        left: 20px;
+    }
+    .step {
+        flex-direction: row;
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    .step-number {
+        left: 0;
+        transform: none;
+    }
+    .step-content {
+        width: calc(100% - 60px);
+        margin-left: 50px;
+    }
+    .step.right {
+        padding-left: 0;
+    }
+    .step.left{
+        padding-right: 0;
+    }
+    .step.left .step-content{
+        margin-left: 60px;
+        text-align: left;
+    }
+    .step.last-step{
+        padding-left: 3%;
+    }
+
+    /* tabs */
+    .tab-header{
+        padding: 3px;
+        padding-bottom: 0;
+        background-color: #c2002f;
+        color: #fff;
+    }
+
+    .tabs-container {
+        flex-direction: column;
+    }
+
+    .tab-buttons {
+        flex-direction: row;
+        width: 100%;
+        background-color: #c2002f;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .tab-buttons::-webkit-scrollbar {
+        height: 3px;
+    }
+
+    .tab-buttons::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+    }
+
+    .tab-buttons button.active {
+        border-left: 0;
+        background: #c2002f;
+        color: #fff;
+        border-bottom: 4px solid #fff;
+    }
+
+    .tab-buttons button {
+        text-align: center;
+        flex-shrink: 0;
+        padding: 10px;
+        min-width: 120px;
+        color: rgb(255, 225, 255, 0.8);
+    }
+
+    .tab-panel {
+        margin-top: 20px;
+    }
+
+    .position-btn{
+        width: 100%;
+    }
+
+    /* custom width */
+    .custom-div-width{
+        width: 100%;
+    }
+}
+
+/* for max-md */
+@media (max-width: 991px) {
+
+    .form-width {
+        width: 100%;
+    }
+
+    /* about-us  */
+    .about-img-one {
+        width: 100%;
+    }
+
+    .about-img-two {
+        width: 100%;
+    }
+
+    .about-img-three {
+        width: 100%;
+    }
+}
+
+/* for max-lg */
+
+@media (max-width: 1199px){
+    .header {
+        padding: 0 0.8rem;
+    }
+
+    .main-nav {
+        position: absolute;
+        background-color: rgb(255, 225, 255, 0.5);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        opacity: 0;
+        transform: translateX(100%);
+        visibility: hidden;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        backdrop-filter: blur(10px);
+    }
+
+    .nav-open .main-nav {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .nav-open .icon-mobile-nav[name="close-outline"]{
+        display: block;
+        color: #fff;
+    }
+    .nav-open .icon-mobile-nav[name="menu-outline"]{
+        display: none;
+    }
+
+    .main-nav-list {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 1.5rem;
+        color: #000;
+    }
+
+    #btn-mobile-nav {
+        display: block;
+        z-index: 1000;
+    }
+
+    .secondary-btn {
+        /* background-color: #000; */
+        box-shadow: none;
+    }
+
+    .flag-container {
+        margin-left: 0;
+    }
+
+    /* what we do section */
+    .divImg {
+        width: 200px;
+        height: 300px;
+    }
+
+    .divImg img {
+        padding-top: 60px;
+        padding-left: 10px;
+        width: 370px;
+    }
+
+    /* footer */
+    .footer-card {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer-container {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .form-width {
+        width: 70%;
+    }
+    
+    .custom-gap {
+        gap: 1.5rem;
+    }
+}
+
+/* for max-xl */
+@media (max-width: 1399px) {
+    
+}
+
+/* for max-2xl */
+@media (max-width:1536px) {}
